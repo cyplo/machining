@@ -6,6 +6,11 @@ sudo apt-get update
 sudo apt-get -y install liboce-visualization-dev libwxgtk2.8-dev libgtkglext1-dev python-dev build-essential bzr git libboost-dev libboost-python-dev subversion debhelper cmake liboce-ocaf2 liboce-ocaf-dev oce-draw
 mkdir heeks_build
 cd heeks_build
+svn checkout http://libarea.googlecode.com/svn/trunk/ libarea
+cd libarea
+dpkg-buildpackage -b -us -uc
+cd ..
+sudo dpkg -i libarea*.deb python-area*.deb
 svn checkout http://heekscad.googlecode.com/svn/trunk/ heekscad
 cd heekscad
 dpkg-buildpackage -b -us -uc
