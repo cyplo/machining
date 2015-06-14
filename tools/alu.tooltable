@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<HeeksCAD_Document>
+    <Tool title="3 mm End Mill" tool_number="1" id="9">
+        <params diameter="3" tool_length_offset="15" automatically_generate_title="1" material="1" type="end_mill" corner_radius="0" flat_radius="0" cutting_edge_angle="0" cutting_edge_height="9" />
+    </Tool>
+</HeeksCAD_Document>
