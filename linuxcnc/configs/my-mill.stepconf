@@ -156,9 +156,9 @@
   <property name="xmaxvel" type="float" value="10.0"/>
   <property name="xmicrostep" type="float" value="2.0"/>
   <property name="xminlim" type="float" value="-300.0"/>
-  <property name="xpulleyden" type="float" value="1.3035"/>
+  <property name="xpulleyden" type="float" value="1.2056375"/>
   <property name="xpulleynum" type="float" value="1.0"/>
-  <property name="xscale" type="float" value="1227.4645186"/>
+  <property name="xscale" type="float" value="1327.09873407"/>
   <property name="xsteprev" type="float" value="200.0"/>
   <property name="yhomepos" type="float" value="0.0"/>
   <property name="yhomesw" type="float" value="0.0"/>
@@ -170,9 +170,9 @@
   <property name="ymaxvel" type="float" value="10.0"/>
   <property name="ymicrostep" type="float" value="2.0"/>
   <property name="yminlim" type="float" value="-300.0"/>
-  <property name="ypulleyden" type="float" value="1.3035"/>
+  <property name="ypulleyden" type="float" value="1.2056375"/>
   <property name="ypulleynum" type="float" value="1.0"/>
-  <property name="yscale" type="float" value="1227.4645186"/>
+  <property name="yscale" type="float" value="1327.09873407"/>
   <property name="ysteprev" type="float" value="200.0"/>
   <property name="zhomepos" type="float" value="0.0"/>
   <property name="zhomesw" type="float" value="0.0"/>
