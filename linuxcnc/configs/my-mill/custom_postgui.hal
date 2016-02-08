@@ -2,3 +2,8 @@
 # The commands in this file are run after the AXIS GUI (including PyVCP panel) starts
 
 sets spindle-at-speed true
+setp halui.jog-speed 10
+
+net joy-x-jog halui.jog.0.analog <= input.0.abs-x-position 
+net joy-y-jog halui.jog.1.analog <= input.0.abs-y-position 
+net joy-z-jog halui.jog.2.analog <= input.0.abs-rz-position 
