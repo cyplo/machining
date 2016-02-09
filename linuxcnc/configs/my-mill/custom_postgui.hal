@@ -3,27 +3,38 @@
 
 sets spindle-at-speed true
 
-loadrt or2 count=2
-loadrt mux4 count=1
+loadrt or2 count=3
+loadrt mux16 count=1
 
 addf or2.0 servo-thread
 addf or2.1 servo-thread
-addf mux4.0 servo-thread
+addf or2.2 servo-thread
+addf mux16.0 servo-thread
 
-# set the jog speed for the joypad again use numbers that make sense for your machine
-setp mux4.0.in0 0 # this one must be 0 to prevent motion unless a button is pressed
-setp mux4.0.in1 25
-setp mux4.0.in2 100
-setp mux4.0.in3 200
+# speeds
+setp mux16.0.in00 0 # this one must be 0 to prevent motion unless a button is pressed
+setp mux16.0.in01 10
+setp mux16.0.in02 100
+setp mux16.0.in03 150
+setp mux16.0.in04 200
+setp mux16.0.in05 0
+setp mux16.0.in06 250
+setp mux16.0.in07 0
+setp mux16.0.in08 400
+setp mux16.0.in09 0
+setp mux16.0.in10 0
+setp mux16.0.in11 0
+setp mux16.0.in12 0
+setp mux16.0.in13 0
+setp mux16.0.in14 0
+setp mux16.0.in15 0
 
-# the following does the magic of setting the jog speeds
-net remote-speed-slow or2.0.in0 input.0.btn-joystick
-net remote-speed-medium or2.1.in0 input.0.btn-thumb
-net remote-speed-fast or2.0.in1 or2.1.in1 input.0.btn-thumb2
+net button1 mux16.0.sel0 <= input.0.btn-joystick
+net button2 mux16.0.sel1 <= input.0.btn-thumb
+net button3 mux16.0.sel2 <= input.0.btn-thumb2
+net button4 mux16.0.sel3 <= input.0.btn-top
 
-net joy-speed-1 mux4.0.sel0 <= or2.0.out
-net joy-speed-2 mux4.0.sel1 <= or2.1.out
-net joy-speed-final halui.jog-speed <= mux4.0.out
+net joy-speed-final halui.jog-speed <= mux16.0.out-f
 
 
 net joy-x-jog halui.jog.0.analog <= input.0.abs-x-position 
