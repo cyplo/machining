@@ -1,4 +1,5 @@
 *.bak
 *.fcstd1
 linuxcnc.var
+postgui_backup.hal
 
