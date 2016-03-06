@@ -181,11 +181,11 @@
   <property name="zleadscrew" type="float" value="2.0"/>
   <property name="zmaxacc" type="float" value="20.0"/>
   <property name="zmaxlim" type="float" value="100.0"/>
-  <property name="zmaxvel" type="float" value="8.0"/>
+  <property name="zmaxvel" type="float" value="20.0"/>
   <property name="zmicrostep" type="float" value="16.0"/>
   <property name="zminlim" type="float" value="-100.0"/>
   <property name="zpulleyden" type="float" value="1.0"/>
-  <property name="zpulleynum" type="float" value="1.0"/>
-  <property name="zscale" type="float" value="1600.0"/>
+  <property name="zpulleynum" type="float" value="2.5625"/>
+  <property name="zscale" type="float" value="4100.0"/>
   <property name="zsteprev" type="float" value="200.0"/>
 </stepconf>
