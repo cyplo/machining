@@ -152,10 +152,10 @@
   <property name="xlatchdir" type="int" value="0"/>
   <property name="xleadscrew" type="float" value="2.0"/>
   <property name="xmaxacc" type="float" value="20.0"/>
-  <property name="xmaxlim" type="float" value="200.0"/>
+  <property name="xmaxlim" type="float" value="180.0"/>
   <property name="xmaxvel" type="float" value="16.0"/>
   <property name="xmicrostep" type="float" value="16.0"/>
-  <property name="xminlim" type="float" value="-200.0"/>
+  <property name="xminlim" type="float" value="-180.0"/>
   <property name="xpulleyden" type="float" value="1.0"/>
   <property name="xpulleynum" type="float" value="1.0"/>
   <property name="xscale" type="float" value="1600.0"/>
